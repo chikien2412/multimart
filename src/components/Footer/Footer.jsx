@@ -4,7 +4,6 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-
   const year = new Date().getFullYear();
   return (
     <footer className="footer">
@@ -12,7 +11,6 @@ const Footer = () => {
         <Row>
           <Col lg="4" className="mb-4 " md="6">
             <div className="logo">
-            
               <div>
                 <h1 className="text-white">Multimart</h1>
               </div>
@@ -42,9 +40,9 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="2" md="3" className="mb-4">
-          <div className="footer__quick-links">
+            <div className="footer__quick-links">
               <h4 className="quick__links-title">Useful Links</h4>
-              <ListGroup >
+              <ListGroup>
                 <ListGroupItem className="ps-0 border-0">
                   <Link to="/shop">Shop</Link>
                 </ListGroupItem>
@@ -57,33 +55,38 @@ const Footer = () => {
                 <ListGroupItem className="ps-0 border-0">
                   <Link to="#">Privacy Policy</Link>
                 </ListGroupItem>
-  
               </ListGroup>
             </div>
           </Col>
-          <Col lg="3" md="3" >
-          <div className="footer__quick-links">
+          <Col lg="3" md="3">
+            <div className="footer__quick-links">
               <h4 className="quick__links-title">Contact</h4>
               <ListGroup className="footer__contact">
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                  <span><i className="ri-map-pin-line"></i></span>
-                  <p>123 PhucLoi , LongBien ,HaNoi</p>
+                  <span>
+                    <i className="ri-map-pin-line"></i>
+                  </span>
+                  <p>Thai Nguyen</p>
                 </ListGroupItem>
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                  <span><i className="ri-phone-line"></i></span>
-                  <p>+84 364697068</p>
+                  <span>
+                    <i className="ri-phone-line"></i>
+                  </span>
+                  <p>+84 395579760</p>
                 </ListGroupItem>
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                  <span><i className="ri-mail-line"></i></span>
-                  <p>nguyenhailong360@gmail.com</p>
+                  <span>
+                    <i className="ri-mail-line"></i>
+                  </span>
+                  <p>chikien2412@gmail.com</p>
                 </ListGroupItem>
-               
-  
               </ListGroup>
             </div>
           </Col>
           <Col lg="12">
-            <p className="footer__copyright">Copyright {year} developed by Hlogz . All rights reserved.</p>
+            <p className="footer__copyright">
+              Copyright {year} developed by Hlogz . All rights reserved.
+            </p>
           </Col>
         </Row>
       </Container>
